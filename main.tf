@@ -1,3 +1,4 @@
+  GNU nano 8.6                                                                               main.tf                                                                                         
 provider "aws" {
   region = "ap-south-1"
 }
@@ -23,3 +24,5 @@ resource "aws_s3_bucket_object" "index" {
 output "website_url" {
   value = aws_s3_bucket.website.website_endpoint
 }
+
+
